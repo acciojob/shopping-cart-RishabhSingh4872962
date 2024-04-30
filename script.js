@@ -23,9 +23,9 @@ btn.addEventListener("click",(e)=>{
 		price:price.value
 	})
 	gtotal=Number(price.value)*Number(quantity.value)+gtotal;
-	console.log(gtotal)
 	total.innerText="";
 	total.innerText=gtotal;
 	name.value="";
 	price.value="";
+	quantity.value="";
 })
