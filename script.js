@@ -2,6 +2,7 @@
 const btn=document.getElementById("add");
 const name=document.getElementById("item-name-input");
 const price=document.getElementById("item-price-input");
+const quantity=document.getElementById("item-qty-input");
 
 const total=document.getElementById("total");
 const table=document.getElementById("table");
@@ -21,7 +22,7 @@ btn.addEventListener("click",(e)=>{
 		name:name.value,
 		price:price.value
 	})
-	gtotal=Number(price.value)+gtotal
+	gtotal=Number(price.value)*Number(quantity.value)+gtotal
 	total.innerText="";
 	total.innerText=gtotal;
 	name.value="";
