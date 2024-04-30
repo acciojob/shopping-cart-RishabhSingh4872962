@@ -8,7 +8,23 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<label for="item-name-input">Name:</label>
+	<input id="item-name-input" type="text" placeholder="Enter the name" />
+	<label for="item-price-input">Price:</label>
+	<input id="item-price-input" type="number" placeholder="Enter the price" />
+	<button id="add">Add</button>
+	<table>
+		<thead>
+			<td>Name</td>
+			<td>Price</td>
+		</thead>
+		<tbody id="table"></tbody>
+		<tfoot>
+			<td>Grand Total:0</td>
+		</tfoot>
+	</table>
+	<h3 id="total"></h3>
+    <script type="text/javascript" src="./script.js"> 
 </script>
 
 </body>
